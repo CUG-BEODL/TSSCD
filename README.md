@@ -51,6 +51,14 @@ python run.py
 
 > 🌟 If you find this resource helpful, please consider to star this repository and cite our research.
 
+```
+@article{He2024TimeSL,
+  title={Time-series land cover change detection using deep learning-based temporal semantic segmentation},
+  author={He, Haixu and Yan, Jining and Liang, Dong and Sun, Zhongchang and Li, Jun and Wang, Lizhe},
+  journal={Remote Sensing of Environment},
+  year={2024}
+}
+```
 
 ### Acknowledgement
 
