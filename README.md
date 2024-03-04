@@ -30,7 +30,7 @@ python run.py
 
 ### Contact
 
-If you have any question or want to use the code, please contact 20161001925@cug.edu.cn.
+If you have any question or want to use the code, please contact yanjn@cug.edu.cn.
 ### Acknowledgement
 
 We appreciate the following github repos a lot for their valuable code base or datasets:
