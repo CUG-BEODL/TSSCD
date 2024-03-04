@@ -1,4 +1,15 @@
-##  Temporal Semantic Segmentation Change Detection(TSSCD)
+<div align="center">
+  <!-- <h1><b> Time-LLM </b></h1> -->
+  <!-- <h2><b> Time-LLM </b></h2> -->
+  <h2><b> Time-series land cover change detection using deep learning-based temporal semantic segmentation </b></h2>
+</div>
+
+<div align="center">
+
+**[<a href="https:xxx">Paper Page</a>]**
+
+</div>
+
 
 ### What is TSSCD?
 
@@ -30,10 +41,14 @@ python run.py
 
 ### Contact
 
-If you have any question or want to use the code, please contact yanjn@cug.edu.cn.
+> 🙋 If you have any question or want to use the code, please contact yanjn@cug.edu.cn.
+
+> 🌟 If you find this resource helpful, please consider to star this repository and cite our research.
+
+
 ### Acknowledgement
 
-We appreciate the following github repos a lot for their valuable code base or datasets:
+We appreciate the following github repos a lot for their valuable code base:
 
 [https://github.com/repository-preservation/lcmap-pyccd](https://github.com/repository-preservation/lcmap-pyccd)
 
