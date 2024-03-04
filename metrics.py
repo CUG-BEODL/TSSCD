@@ -93,12 +93,12 @@ class SpatialChangeDetectScore(object):
             self.PreNoChange_LabChange += 1
 
     def getScore(self):
-        self.spatial_pa_change = self.PreChange_LabChange / (self.PreChange_LabChange + self.PreChange_LabNoChange)
-        self.spatial_pa_Nochange = self.PreNoChange_LabNoChange / (
+        self.spatial_ua_change = self.PreChange_LabChange / (self.PreChange_LabChange + self.PreChange_LabNoChange)
+        self.spatial_ua_Nochange = self.PreNoChange_LabNoChange / (
                 self.PreNoChange_LabNoChange + self.PreNoChange_LabChange)
 
-        self.spatial_ua_change = self.PreChange_LabChange / (self.PreChange_LabChange + self.PreNoChange_LabChange)
-        self.spatial_ua_Nochange = self.PreNoChange_LabNoChange / (
+        self.spatial_pa_change = self.PreChange_LabChange / (self.PreChange_LabChange + self.PreNoChange_LabChange)
+        self.spatial_pa_Nochange = self.PreNoChange_LabNoChange / (
                 self.PreNoChange_LabNoChange + self.PreChange_LabNoChange)
         self.spatial_f1 = 2 * self.spatial_pa_change * self.spatial_ua_change / (
                 self.spatial_pa_change + self.spatial_ua_change)
@@ -140,12 +140,12 @@ class TemporalChangeDetectScore(object):
         self.PreNoChange_LabNoChange += np.where((hot_pre != 1) & (hot_label != 1))[0].shape[0]
 
     def getScore(self):
-        self.temporal_pa_change = self.PreChange_LabChange / (self.PreChange_LabChange + self.PreChange_LabNoChange)
-        self.temporal_pa_Nochange = self.PreNoChange_LabNoChange / (
+        self.temporal_ua_change = self.PreChange_LabChange / (self.PreChange_LabChange + self.PreChange_LabNoChange)
+        self.temporal_ua_Nochange = self.PreNoChange_LabNoChange / (
                 self.PreNoChange_LabNoChange + self.PreNoChange_LabChange)
 
-        self.temporal_ua_change = self.PreChange_LabChange / (self.PreChange_LabChange + self.PreNoChange_LabChange)
-        self.temporal_ua_Nochange = self.PreNoChange_LabNoChange / (
+        self.temporal_pa_change = self.PreChange_LabChange / (self.PreChange_LabChange + self.PreNoChange_LabChange)
+        self.temporal_pa_Nochange = self.PreNoChange_LabNoChange / (
                 self.PreNoChange_LabNoChange + self.PreChange_LabNoChange)
         self.temporal_f1 = 2 * self.temporal_pa_change * self.temporal_ua_change / (
                 self.temporal_pa_change + self.temporal_ua_change)
