@@ -22,6 +22,13 @@
 1. We were inspired by the semantic segmentation task of remote sensing images and defined land cover types as semantics. However, we implemented temporal semantic segmentation on a one-dimensional time series. Land cover changes in the representation of remote sensing time series were considered semantic boundaries, and we used existing mature semantic segmentation models to segment different time intervals.
 2. To meet the demand for more complex remote sensing time series interpretation and to bridge the **"semantic gap"** between low-level **temporal changes** and high-level **semantic changes**, we build an end-to-end change detection model based on temporal semantic segmentation in the field of computer vision as a prototype design.
 
+
+<p align="center">
+
+<img src="img/flow_new.png">
+
+</p>
+
 ### Quick view
 
 You can run demo.py to visualize the output of the TSSCD model. The trained model is saved under the **model_data** folder. Please note that this model parameters is only valid in the research area specified in the paper, and its generalization performance has not been evaluated.
