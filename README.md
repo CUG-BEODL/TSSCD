@@ -1,3 +1,8 @@
+<p align="center">
+
+<img src="img/TSSCD.png" width="200">
+
+</p>
 <div align="center">
   <!-- <h1><b> Time-LLM </b></h1> -->
   <!-- <h2><b> Time-LLM </b></h2> -->
@@ -9,6 +14,7 @@
 **[<a href="https:xxx">Paper Page</a>]**
 
 </div>
+
 
 
 ### What is TSSCD?
