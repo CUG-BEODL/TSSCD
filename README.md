@@ -11,7 +11,9 @@
 
 <div align="center">
 
-**[<a href="https:xxx">Paper Page</a>]**
+**[[Paper Page]](https://doi.org/10.1016/j.rse.2024.114101)**
+
+
 
 </div>
 
@@ -60,11 +62,14 @@ python run.py
 > 🌟 If you find this resource helpful, please consider to star this repository and cite our research.
 
 ```
-@article{He2024TimeSL,
-  title={Time-series land cover change detection using deep learning-based temporal semantic segmentation},
-  author={He, Haixu and Yan, Jining and Liang, Dong and Sun, Zhongchang and Li, Jun and Wang, Lizhe},
-  journal={Remote Sensing of Environment},
-  year={2024}
+@article{He2023Timeseries,
+title = {Time-series land cover change detection using deep learning-based temporal semantic segmentation},
+journal = {Remote Sensing of Environment},
+volume = {305},
+pages = {114101},
+year = {2024},
+issn = {0034-4257},
+doi = {https://doi.org/10.1016/j.rse.2024.114101}
 }
 ```
 
