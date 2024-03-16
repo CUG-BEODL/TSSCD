@@ -61,6 +61,8 @@ python run.py
 
 > 🌟 If you find this resource helpful, please consider to star this repository and cite our research.
 
+> 🌍 If you want to view the study area mapping online, you can visit ([Google Earth Engine](https://ee-hhx.projects.earthengine.app/view/tsscd))
+
 ```
 @article{He2023Timeseries,
 title = {Time-series land cover change detection using deep learning-based temporal semantic segmentation},
