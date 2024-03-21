@@ -132,13 +132,13 @@ def validModel(test_dl, model, device, configs, saveModel=True, best_acc=0, best
         print('Kappa:', round(Kappa, 4))
         spatialscore.getScore()
         spatial_f1 = spatialscore.spatial_f1
-        print('spatial_PA: ', round(spatialscore.spatial_pa_change, 4))
-        print('spatial_UA: ', round(spatialscore.spatial_ua_change, 4))
+        print('spatial_PA: ', round(spatialscore.spatial_pa, 4))
+        print('spatial_UA: ', round(spatialscore.spatial_ua, 4))
         print('spatial_f1: ', round(spatial_f1, 4))
         temporalscore.getScore()
         temporal_f1 = temporalscore.temporal_f1
-        print('temporal_PA: ', round(temporalscore.temporal_pa_change, 4))
-        print('temporal_UA: ', round(temporalscore.temporal_ua_change, 4))
+        print('temporal_PA: ', round(temporalscore.temporal_pa, 4))
+        print('temporal_UA: ', round(temporalscore.temporal_ua, 4))
         print('temporal_f1: ', round(temporalscore.temporal_f1, 4))
         if saveModel:
             if not os.path.exists(os.path.join('model_data')):
