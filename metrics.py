@@ -100,8 +100,11 @@ class SpatialChangeDetectScore(object):
         self.spatial_pa_change = self.PreChange_LabChange / (self.PreChange_LabChange + self.PreNoChange_LabChange)
         self.spatial_pa_Nochange = self.PreNoChange_LabNoChange / (
                 self.PreNoChange_LabNoChange + self.PreChange_LabNoChange)
-        self.spatial_f1 = 2 * self.spatial_pa_change * self.spatial_ua_change / (
-                self.spatial_pa_change + self.spatial_ua_change)
+
+        self.spatial_pa = (self.spatial_pa_change + self.spatial_pa_Nochange) / 2
+        self.spatial_ua = (self.spatial_ua_change + self.spatial_ua_Nochange) / 2
+        self.spatial_f1 = 2 * self.spatial_pa * self.spatial_ua / (
+                self.spatial_pa + self.spatial_ua)
 
 
 class TemporalChangeDetectScore(object):
@@ -147,5 +150,9 @@ class TemporalChangeDetectScore(object):
         self.temporal_pa_change = self.PreChange_LabChange / (self.PreChange_LabChange + self.PreNoChange_LabChange)
         self.temporal_pa_Nochange = self.PreNoChange_LabNoChange / (
                 self.PreNoChange_LabNoChange + self.PreChange_LabNoChange)
-        self.temporal_f1 = 2 * self.temporal_pa_change * self.temporal_ua_change / (
-                self.temporal_pa_change + self.temporal_ua_change)
+
+        self.temporal_pa = (self.temporal_pa_change + self.temporal_pa_Nochange) / 2
+        self.temporal_ua = (self.temporal_ua_change + self.temporal_ua_Nochange) / 2
+
+        self.temporal_f1 = 2 * self.temporal_pa * self.temporal_ua / (
+                self.temporal_pa + self.temporal_ua)
