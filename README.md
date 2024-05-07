@@ -47,7 +47,7 @@ The input data are all 10m and 20m bands (10 in total) of Sentinel-2, and the ti
 
 #### Note:
 1. Prepare your training samples and time-phase land cover labels, pay attention to modify the **data_loader.py**. For detailed data format, please refer to the dataset folder.
-2. Samples can be obtained by accessing the link：[https://figshare.com/account/articles/25764108](https://figshare.com/account/articles/25764108)
+2. Samples can be obtained by accessing the link：[https://figshare.com/articles/dataset/Urban_monthly_land_dynamics_Sentinel-2_benchmark_dataset/25764108](https://figshare.com/articles/dataset/Urban_monthly_land_dynamics_Sentinel-2_benchmark_dataset/25764108)
 3. Retrain TSSCD with the following command, and the model with the highest change detection and classification accuracy will be automatically saved.
 4. We strongly recommend using the data set construction method mentioned in Section 5.2 of the paper. If you have a better annotation method or annotation tool, please feel free to contact us.
 
