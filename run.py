@@ -31,7 +31,7 @@ class Diceloss(nn.Module):
 
 
 def trainModel(model, configs):
-    train_dl, test_dl = load_data(configs)  # Load data
+    train_dl, test_dl = load_data()  # Load data
     # print('parameter number is {}'.format(sum(p.numel() for p in model.parameters())))
 
     loss_fn = nn.CrossEntropyLoss()  # classification loss function
@@ -155,7 +155,7 @@ def validModel(test_dl, model, device, configs, saveModel=True, best_acc=0, best
 
 if __name__ == '__main__':
     configs = Configs()
-    model = Tsscd_FCN(10, 6, [128, 256, 512, 1024])
+    model = Tsscd_FCN(configs.input_channels, configs.classes, configs.model_hidden)
     model = model.to(device=device)
 
     trainModel(model, configs)
