@@ -17,7 +17,7 @@ class MaskDataset(data.Dataset):
         self.type = type
 
     def __getitem__(self, index):
-        data, label = self.image_paths[index, :-1], self.image_paths[index, -1]
+        data, label = self.image_paths[index, :-3], self.image_paths[index, -3]
         if self.type == 'train':
             """if train dataset, then apply data enhancement"""
             if random.random() < 0.5:
@@ -35,8 +35,10 @@ class MaskDataset(data.Dataset):
 
 
 def load_data():
-    train_ = np.load('dataset/train.npy').transpose(0, 2, 1)
-    test_ = np.load('dataset/test.npy').transpose(0, 2, 1)
+    dataset = np.load('Xiongan New Area.npy')
+
+    train_ = dataset[:int(0.8 * dataset.shape[0])]
+    test_ = dataset[int(0.8 * dataset.shape[0]):]
 
 
     train_ds = MaskDataset(paths=train_, type='train')
